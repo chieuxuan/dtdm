@@ -1,0 +1,9 @@
+class person: 
+    hoten = "Nguyen Van A"
+    tuoi = 20
+    def __init__(self,hoten,tuoi):
+        #không nhất thiết là self, nhưng bắt buộc ở vị trí đầu tiên
+        self.hoten = hoten
+        self.tuoi = tuoi
+p1 = person("Trần Văn B",30)
+print(p1.hoten)
