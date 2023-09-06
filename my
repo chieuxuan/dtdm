@@ -1,1 +1,13 @@
-print('xin chao')
+#đếm số sinh viên trong lớp
+Python_for_analysis= ['kiên', 'lan', 'bình', 'hoa', 'ngọc', 'bảo', 'ngân', 'kỳ', 'hằng', 'hoàng', 'biển', 'cường', 'duy', 'anh', 'nga']
+print('số sinh viên trong lớp là:', len(Python_for_analysis))
+diemsomon=['C','B','D','A','F','A','B','F','B','B','C','A','D','F','B']
+#có bao nhiêu sinh viên phải học lại môn này
+print('số học sinh phải học lại là:', diemsomon.count('F'))
+#có bao nhiêu sinh viên có điểm B trở lên
+print('số học sinh có điểm từ B trở lên là:', diemsomon.count('B') + diemsomon.count('A'))
+# sinh viên đầu tiên và cuối cùng trong lớp đã nghỉ học, tạo một bảng điểm mới và loại bỏ điểm của các sinh viên này ra khỏi danh sách điểm
+diemsomon.remove('C') 
+diemsomon.pop()
+print('Bảng điểm mới:', diemsomon)
+
